@@ -1,3 +1,76 @@
+/* Who You Are section cards */
+.who-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap; /* allows wrapping on smaller screens */
+    margin-top: 20px;
+}
+.who-cards .card {
+    background: #232323;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 180px;
+    transition: transform 0.2s;
+}
+.who-cards .card:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+.who-you-are-section h2,
+.howitworks-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.howitworks-card {
+    background: #232323;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 180px;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.howitworks-card:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+.howitworks-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.howitworks-title {
+    color: #fff;
+    font-size: 16px;
+}
+
+
+/* How it works row */
+.howitworks-row {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap; /* for responsiveness */
+    margin-top: 20px;
+}
+
+.center-group {
+    justify-content: center !important;
+    text-align: center;
+    width: 100%;
+}
+.center-group .card {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 /* Get Started button style (logo color) */
 .getstarted-btn-container {
     margin-top: 20px;
@@ -93,19 +166,15 @@
      border-radius: 10px;
  }
 
- main {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     min-height: 300px;
- }
+
 
  .button-group {
-     display: flex;
-     gap: 40px;
- }
-
- .card {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
      background: black;
      border-radius: 15px;
      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
@@ -134,17 +203,20 @@
 
  .card-link,
  .card-button {
-     display: block;
-     background: #007bff;
-     color: #fff;
-     border: none;
-     border-radius: 7px;
-     padding: 10px 0;
-     text-decoration: none;
-     font-size: 16px;
-     margin-top: 10px;
-     cursor: pointer;
-     transition: background 0.2s;
+    display: block;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
  }
 
  .card-link:hover,
