@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            width: 100%;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 20px;
+            background: #1a1a1a;
+        }
+        .navbar img {
+            height: 50px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        .nav-links h2 {
+            margin: 0;
+            color: #fff;
+        }
+        .getstarted {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px 20px 20px 20px;
+        }
+        .getstarted-text {
+            flex: 1;
+        }
+        .getstarted-img {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .getstarted-img img {
+            max-height: 300px;
+            border-radius: 10px;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 300px;
+        }
+        .button-group {
+            display: flex;
+            gap: 40px;
+        }
+        .card {
+            background: #232323;
+            border-radius: 15px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+            padding: 20px;
+            text-align: center;
+            width: 180px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+        }
+        .card img {
+            max-width: 100px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+        .card-title {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .card-link, .card-button {
+            display: block;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 7px;
+            padding: 10px 0;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .card-link:hover, .card-button:hover {
+            background: #0056b3;
+        }
+        .cutout {
+  background-image: url('get stared.jpeg');
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="careerlyze.png.png" alt="logo" height="100">
+            <div class="nav-links">
+                <h2>Home</h2>
+                <h2>About</h2>
+            </div>
+        </div>
+        <div class="getstarted">
+            <div class="getstarted-text">
+                <h1>Where Gen Z meets AI to unlock career clarity<br>
+                Discover your strengths, explore opportunities,<br>
+                and design your career journey with AI.</h1>
+            </div>
+            <div class="getstarted-img">
+                <img src="get stared.jpeg" alt="Get started">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="button-group">
+            <a href="school_student.html" class="card">
+                <img src="studen school.png" alt="School Student">
+                <div class="card-title">School Student</div>
+                <span class="card-link">Explore</span>
+            </a>
+            <a href="college_student%20.html" class="card">
+                <img src="college student.png" alt="College Student">
+                <div class="card-title">College Student</div>
+                <span class="card-link">Explore</span>
+            </a>
+            <div class="card">
+                <img src="job_seeker.png" alt="Job Seeker">
+                <div class="card-title">Job Seeker</div>
+                <button class="card-button">Explore</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
